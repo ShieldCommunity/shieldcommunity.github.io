@@ -139,6 +139,11 @@ h4{
     transition: 0.3s;
     padding: 1rem;
  }
+ .main{
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+ }
  .menu{
     margin-top: 0.7rem;
     color: white;
@@ -159,13 +164,10 @@ h4{
 .logo-text:hover{
     color: var(--hover);
 }
-.main{
-    margin-top: 8rem;
-}
 .mq{
     display: flex;
     flex-direction: row;
-    margin-top: 15%;
+    margin-top: 10%;
     justify-content: center;
     align-items: center;
 }
@@ -281,4 +283,60 @@ h4{
 .download-buttons{
     display: flex;
     flex-direction: column;
+}
+.footer{
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: #0D0D0D;
+    color: white;
+    padding: 1.5rem;
+}
+.team{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+}
+.team-h1{
+    border-bottom: 3px solid white;
+    width: fit-content;
+    text-align: center;
+  margin: 0 auto;
+}
+.team-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+    width: 70%;
+    margin: 0 auto;
+}
+.team-img{
+    width: 15rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.team-box{
+    background-color: var(--black);
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 30rem;
+}
+.team-name{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    height: 6.6rem;
+}
+.team-gh{
+    color: var(--main);
+}
+.team-role{
+    color: var(--gray);
 }
