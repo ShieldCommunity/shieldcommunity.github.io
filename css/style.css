@@ -297,6 +297,8 @@ h4{
     text-align: center;
     color: white;
     flex-direction: column;
+    margin-top: 7%;
+    margin-bottom: 7%;
 }
 .team-h1{
     border-bottom: 3px solid white;
@@ -333,6 +335,7 @@ h4{
     text-align: center;
     justify-content: center;
     height: 6.6rem;
+    flex-direction: column;
 }
 .team-gh{
     color: var(--main);
