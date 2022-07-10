@@ -246,7 +246,7 @@ h4{
 }
 .download-box{
     background-color: var(--black);
-    width: 20rem;
+    width: 30rem;
     padding: 2rem;
     border-radius: 1rem;
     margin: 1rem;
@@ -262,7 +262,11 @@ h4{
 .product-price{
     color: var(--blue);
     font-size: 2rem;
+}
+.product-desc{
     margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--gray);
 }
 .text-align{
     color: white;
