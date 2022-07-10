@@ -1,0 +1,284 @@
+:root{
+    --background: #181819;
+    --header: #0D0D0D;
+    --font: 'Lato', sans-serif;
+    --hover: #4127A6;
+    --main: #4637F2;
+    --black: #0D0D0D;
+    --gray: #6A6970;
+    --blue: #CEC0FA;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    cursor: url(/img/adopcion.jpg);
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+a {
+    text-decoration: none;
+}
+h1{
+    font-size: 3rem;
+    font-weight: normal;
+    margin: 0;
+}
+h2{
+    font-size: 3rem;
+    font-weight: normal;
+    margin: 0;
+    font-family: var(--font2);
+}
+h3{
+    font-size: 3rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: var(--background);
+}
+h4{
+    font-size: 3rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: var(--header);
+    z-index: 1;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem;
+    justify-content: space-between;
+    width: 100%;
+}
+.a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nombre{
+    margin: 0;
+    color: white;
+    transition: 0.3s;
+}
+.nombre:hover{
+    color: var(--hover);
+}
+.menu{
+    font-size: 3rem;
+    color: white;
+}
+.shield{
+    width: 5rem;
+    margin-right: 1rem;
+    border-radius: 3px;
+}
+.navlink{
+    font-size: 3rem;
+    color: white;
+    font-weight: 400;
+    margin: 1.5rem;
+    transition: 0.3s;
+    display: none;
+    position: relative;
+
+}
+.navlink:hover{
+    color: var(--hover);
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 1rem;
+}
+@media (min-width: 850px) {
+        .nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .menu{
+            display: none;
+        }
+        #menu{
+            display: none;
+        }
+        .navlink{
+            display: flex;
+        }
+
+    
+ }
+ .flex{
+     display: flex;
+     flex-direction: column;
+ }
+ .logo-text{
+    color: white;
+    font-family: var(--font);
+    position: relative;
+    transition: 0.3s;
+    padding: 1rem;
+ }
+ .menu{
+    margin-top: 0.7rem;
+    color: white;
+ }
+.navlink:after{
+        content:"";
+        position:absolute;
+        height:3px;
+        width:0;
+        left:0;
+        bottom: 1px;
+        transition: 0.3s;
+        background: linear-gradient(90deg,#8743ff,#4136f1);
+}
+.navlink:hover:after{
+    width: 100%;
+}
+.logo-text:hover{
+    color: var(--hover);
+}
+.main{
+    margin-top: 8rem;
+}
+.mq{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15%;
+    justify-content: center;
+    align-items: center;
+}
+.mq-textos{
+    flex-direction: column;
+    width: 70rem;
+    text-align: center;
+}
+.fa-shield-halved{
+    display: none;
+    font-size: 20rem;
+    color: var(--main);
+}
+.fa-shield-halved::before{
+    display: none;
+}
+.mq-h1{
+    color: white;
+    font-size: 4rem;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 3px solid white;
+}
+@media (min-width: 768px) {
+    .mq-textos{
+        text-align: left;
+    }
+    .fa-shield-halved{
+        display:flex;
+    }
+    .fa-shield-halved::before{
+        display: flex;
+    }
+    .mq-h1{
+        text-align: left;
+        margin: 0 0;
+    }
+ }
+
+
+ .mq-text{
+    color: white;
+ }
+.gray{
+    color: var(--gray);
+}
+.flex-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    text-align: center;
+}
+.flex-box{
+    width: 25rem;
+    background-color: var(--black);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+.flex-box-title{
+    color: white;
+}
+.flex-box-text{
+    font-size: 2.5rem;
+    color: var(--gray);
+}
+.flex-icon{
+    font-size: 10rem;
+    color: var(--main);
+}
+.download{
+    margin-top: 10%;
+    text-align: center;
+}
+.download-box{
+    background-color: var(--black);
+    width: 20rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+.download-boxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product-name{
+    color: white;
+}
+.product-price{
+    color: var(--blue);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.text-align{
+    color: white;
+    border-bottom: 3px solid white;
+    width: fit-content;
+    text-align: center;
+    margin: 1rem auto;
+}
+.download-button{
+    color: white;
+    background: linear-gradient(90deg,#8743ff,#4136f1);
+    font-size: 2.3rem;
+    padding: 1rem;
+    border-right: 5px solid #8743ff;
+    border-bottom: 5px solid #4136f1;
+    margin: 1rem 0;
+}
+.download-buttons{
+    display: flex;
+    flex-direction: column;
+}
