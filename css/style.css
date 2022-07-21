@@ -335,10 +335,11 @@ h4{
 }
 .team-name{
     display: flex;
-    flex-wrap: wrap;
+    width: 28rem;
     text-align: center;
     justify-content: center;
     height: 6.6rem;
+ 
     flex-direction: column;
 }
 .team-gh{
